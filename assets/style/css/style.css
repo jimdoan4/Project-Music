@@ -3,18 +3,22 @@
   font-family: 'muse-500';
   src: url('../fonts/museosans-500.otf');
 }
+
 @font-face {
   font-family: 'muse-300';
   src: url('../fonts/museosansrounded-300-webfont.ttf'), url('../fonts/museosansrounded-300-webfont.woff'), url('../fonts/museosansrounded-300-webfont.svg');
 }
+
 @font-face {
   font-family: 'OpenSans';
   src: url('../fonts/OpenSans-Regular.ttf');
 }
+
 @font-face {
   font-family: 'OpenSans-Semibold';
   src: url('../fonts/OpenSans-SemiBold.ttf');
 }
+
 /***************************** variables *****************************/
 /***************************** GENRAL RESET *****************************/
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -109,6 +113,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -123,41 +128,53 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 /***************************** CUSTOM SETTINGS *****************************/
 html {
   background-color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+font-family: 'Exo', sans-serif;
 }
+
 body {
-  background-color: #ffffff;
-  color: #5a6175;
+  background-color: #fff6e6;
+  color: #2a2b2b;
 }
+
 p,
 ul,
 ol {
   margin-bottom: 0.5em;
 }
+
 a {
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: none;
 }
+
 sup {
   font-size: xx-small;
   vertical-align: super;
 }
+
 p a,
 h5 a {
   font-weight: bold;
   transition: all 0.2s ease-out;
 }
+
 h1,
 h2,
 h3,
@@ -166,93 +183,221 @@ h5 {
   line-height: 1.5;
   margin-bottom: 1.5em;
 }
+
 h1 {
   font-size: 28px;
   font-family: "muse-300", Georgia, serif;
 }
+
 h2 {
   font-size: 26px;
   font-family: "muse-300", Georgia, serif;
 }
+
 h3 {
   font-size: 21px;
   font-family: "muse-300", Georgia, serif;
 }
+
 h4 {
   font-size: 18px;
   font-family: "muse-300", Georgia, serif;
 }
+
 h5 {
   font-size: 14px;
   font-weight: bold;
 }
+
 .btn-custom {
   color: #ffffff;
-  background-color: #2b4661;
+  background-color: #d145ac;
   font-size: 18px;
   font-family: "muse-500", Arial, sans-serif;
   transition: 0.3s all ease-out;
 }
+
 .btn-custom:hover {
   box-shadow: 1px 3px 12px 0px #b3b3b3;
-  color: #ffffff;
-  background: #2554a1;
+  color: #2a2b2b;
+  background: #ffebf9;
 }
+
+
 /*************************** NAVBAR **********************/
+.card {
+  border-color: #fff6e6;
+  background: #fff6e6;
+}
+
+.card:hover {
+  border-color: #f0f0f0;
+  background: white;
+  transition: 0.7s all ease-out;
+}
+
+.sub {
+  color: #d145ac;
+  margin-top: -40px;
+  font-family: 'Oleo Script', cursive;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  height: 25%;
+}
+
+.centers {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+}
+
 #navbar {
-  padding: 15px 25px;
+  /* padding: 15px 25px; */
   border: none;
-  background: #ffffff;
+
+  /* background: #ffffff; */
   transition: padding-top 0.3s, padding-bottom 0.3s;
+  overflow: hidden;
 }
+
 #navbar .navbar-toggler {
-  background: #2b4661;
+  background: black;
   border: none;
 }
+
 #navbar .navbar-nav .nav-item .nav-link {
-  color: #000000;
+  color: white;
   font-weight: 400;
   font-size: 14px;
   font-family: "muse-500", Arial, sans-serif;
   transition: all 0.3s ease-out;
+  padding-left: 30px;
+  padding-right: 30px;
 }
+
 #navbar .navbar-nav .nav-item .nav-link.active,
 #navbar .navbar-nav .nav-item .nav-link:hover {
-  background: #2b4661;
-  color: #ffffff !important;
+  color: red !important;
   transition: all 0.5s ease-out;
 }
+
 /**************************** HEADER ***************************/
+.intros {
+  margin-left: 130px;
+  margin-right: 130px;
+}
+.line {
+  border: .7px solid black;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: -55px;
+}
 #header {
   overflow-x: hidden;
 }
+.featured {
+  background: #474747;
+  color: white;
+  border-color: #474747;
+  height: 390px;
+}
 #header #header-container {
   padding: 50px;
-  background: url('https://www.pngkit.com/png/detail/767-7671009_blue-light-technology-lines-download-hd-png-clipart.png');
+  background: url('https://luxurybackpacking.net/wp-content/uploads/2017/01/most-amazing-hotels-in-indonesia-como-shambala-estate-ubud-bali.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 730px;
+  /* opacity: .8; */
 }
+
+#header-about #header-container {
+  padding: 50px;
+  background: url('https://indonesia.tripcanvas.co/wp-content/uploads/2015/02/traditional-villa-fb-feature-1.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 730px;
+  height: auto;
+  width: 100%;
+}
+
+#header-events #header-container {
+  padding: 50px;
+  background: url('https://images.squarespace-cdn.com/content/v1/54ad61f2e4b041e83134a168/1553107558284-DCMOGB45L7M53V9ACB69/ke17ZwdGBToddI8pDm48kOegDzDCzNVF6YUIz20rP6AUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcaizFwd7npuQr-A_m6boUM7g_TWouBuX-aInZddt8WSJaZnnfpB8RHZYWZIZRb8fa/Events4.jpg?format=1500w');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 370px;
+  height: auto;
+  width: 100%;
+}
+
+#header-videos #header-container {
+  padding: 50px;
+  background: url('https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,g_xy_center,h_650,q_50,w_1900,x_1121,y_327/v1/clients/lakecharles-redesign/int_slide_beee0b19-c5c1-45a9-b2f5-44b9acbcade5.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 370px;
+  height: auto;
+  width: 100%;
+}
+
+.baked {
+  font-family: 'Raleway', sans-serif;
+font-family: 'Exo', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Permanent Marker', cursive;
+  font-size: 80px;
+  color: white;
+ padding-top: 160px;
+}
+
+.bakeds {
+  font-size: 27px !important;
+  color: #2a2b2b;
+  margin-top: -150px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 #header #header-container .text-container {
   margin-top: 100px;
 }
+
 #header #header-container .text-container h1,
 #header #header-container .text-container h4 {
   color: #2b4661;
   line-height: 1.5em;
 }
+
 #header #header-container .text-container h1 {
   font-family: "muse-300", Georgia, serif;
 }
+
 #header #header-container .text-container h4 {
   font-family: "OpenSans", Helvetica, Arial, sans-serif;
 }
+
 #header #footer-container {
   background-color: #f2f2f2;
   padding: 30px;
   border-bottom: 1px solid #e6e6e6;
 }
+
 #header #footer-container button {
   color: #ffffff;
   background-color: #2b4661;
@@ -261,42 +406,51 @@ h5 {
   float: right;
   margin: 0 0 10px 10px;
 }
+
 #header #footer-container .event-details {
   font-family: "muse-500", Arial, sans-serif;
   font-size: 18px;
   color: #565659;
 }
+
 #header #footer-container .event-details a {
   font-family: "OpenSans-Semibold", Arial, sans-serif;
   font-size: 16px;
 }
+
 #header #footer-container p {
   color: #5a6175;
   font-family: "OpenSans", Helvetica, Arial, sans-serif;
 }
+
 /**************************** GET-INVOLVED ***************************/
 #get-involved {
   padding: 50px 0;
 }
+
 #get-involved .container h3 {
   font-family: "muse-500", Arial, sans-serif;
   margin-bottom: 50px;
 }
+
 #get-involved .container .row .col-md-4 img {
   height: 150px;
   margin: 0 auto;
   display: block;
   margin-bottom: 30px;
 }
+
 #get-involved .container .row .col-md-4 h4 {
   font-family: "muse-500", Arial, sans-serif;
   margin-bottom: 15px;
 }
+
 #get-involved .container .row .col-md-4 p {
   font-family: "muse-500", Arial, sans-serif;
   line-height: 1.5;
 }
-.about-me h4{
+
+.about-me h4 {
   font-family: "muse-500", Arial, sans-serif;
   color: #61c0bd;
   font-weight: bold;
@@ -310,6 +464,7 @@ h5 {
 #get-involved .container .row .col-md-4 a {
   margin-top: 10px;
 }
+
 /**************************** MISSION ***************************/
 #mission {
   background-color: #f2f2f2;
@@ -319,18 +474,22 @@ h5 {
   opacity: 0;
   transition: all 0.7s ease-out;
 }
+
 #mission .container h3,
 #mission .container h4 {
   font-family: "muse-500", Arial, sans-serif;
 }
+
 #mission .container h5 {
   font-family: "OpenSans", Helvetica, Arial, sans-serif;
 }
+
 #mission .container .row .col-md-4 .card {
   border: none;
   border-radius: 5px;
   margin-top: 50px;
 }
+
 #mission .container .row .col-md-4 .card .icon-container {
   border-radius: 50%;
   margin: 0 auto;
@@ -339,182 +498,285 @@ h5 {
   margin-top: -45px;
   width: 100px;
 }
+
 #mission .container .row .col-md-4 .card .icon-container img {
   padding: 16px;
   width: 75px;
   height: 70px;
 }
+
 #mission .container .row .col-md-4 .card .card-body .card-title {
   color: #2b4661;
   margin-bottom: 15px;
   font-family: "muse-300", Georgia, serif;
 }
+
 #mission .container .row .col-md-4 .card .card-body .card-text {
   font-family: "OpenSans", Helvetica, Arial, sans-serif;
   line-height: 1.5;
 }
+
 /**************************** MEMBERS ***************************/
 #members {
   padding: 50px 50px 0 50px;
 }
+
 #members .container h3 {
   font-family: "muse-500", Arial, sans-serif;
   margin-bottom: 60px;
 }
+
 #members .container #members-slider img {
   height: 50px;
   width: 120px;
   margin: 0 auto;
   margin-bottom: 20px;
 }
+
 #members .container #members-slider img:hover {
   transform: scale(1.1);
   transition: all 0.5s ease-out;
 }
+
 #members .container .owl-carousel .owl-dots.disabled {
   display: inline-block;
   margin-top: 50px;
 }
+
 #members .container .owl-theme .owl-dots .owl-dot.active span,
 #members .container .owl-theme .owl-dots .owl-dot:hover span {
   background: #2b4661 !important;
 }
+
 #members .container .owl-theme .owl-dots .owl-dot span {
   background: #2b4661 !important;
 }
+
 /********************************* EVENT ***********************************/
 #event {
   padding: 50px 0;
+  margin-left: 130px;
+  margin-right: 130px;
   font-family: "muse-500", Arial, sans-serif;
 }
+
+#events {
+  padding: 50px 0;
+  margin-left: 130px;
+  margin-right: 130px;
+  font-family: "muse-500", Arial, sans-serif;
+}
+
 #event .container .row .col-md-4 .card a img {
   opacity: 0.7;
   height: 200px;
 }
+
 #event .container .row .col-md-4 .card a img:hover {
   opacity: 1;
   transition: all 0.7s ease-out;
 }
+
 #event .container .row .col-md-4 .card .card-text {
   line-height: 1.3;
 }
+
 /********************************* BLOG ***********************************/
 #blog {
   padding: 0 0 50px 0;
 }
+
 #blog h3 {
   font-family: "muse-500", Arial, sans-serif;
   color: #2b4661;
   margin: 50px 0;
 }
+
 #blog #blog-slider .item a h4 {
   font-family: "OpenSans-Semibold", Arial, sans-serif;
   color: #2b4661;
   border-bottom: 1px solid #f2f2f2;
 }
+
 #blog #blog-slider .item a .main-p {
   font-family: "OpenSans", Helvetica, Arial, sans-serif;
   color: #2b4661;
   line-height: 1.5;
   border-bottom: 1px solid #f2f2f2;
 }
+
 #blog #blog-slider .item a p {
   color: #2b4661;
 }
+
 #blog .owl-nav {
   display: inline-block;
   position: relative;
   left: 48%;
   margin-top: 20px;
 }
+
 #blog .owl-prev {
   font-size: 30px;
   color: #2b4661;
   margin-right: 25px;
 }
+
 #blog .owl-next {
   font-size: 30px;
   color: #2b4661;
 }
+
 /**************************** CONTACT ***************************/
 #contact {
   padding: 50px 0;
 }
+
 #contact label {
   margin-bottom: 10px;
   font-family: "OpenSans", Helvetica, Arial, sans-serif;
 }
+
 /**************************** FOOTER ***************************/
 footer {
   padding: 20px;
-  background: #2b4661;
+  /* background: #d145ac; */
+  background: #262626;
+  color: white;
 }
+
 footer .container-fluid .social {
   margin-bottom: 10px;
 }
+
 footer .container-fluid .social a {
-  color: #ffffff;
-  font-size: 16px;
+  color: white;
+  font-size: 13px;
   margin-left: 20px;
 }
+
 footer .container-fluid .copyright-area p {
   color: white;
   font-family: "OpenSans", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 13px;
 }
+
 footer .container-fluid .copyright-area p a {
-  color: #ffffff;
+  color: white;
   text-decoration: none;
 }
+
 /**************************** MEDIA-QUERY ***************************/
 @media only screen and (min-width: 300px) {
-  #navbar {
-    box-shadow: 0px 1px 7px #5a6175;
-  }
+  /* #navbar {
+    box-shadow: 0px 1px 3px #5a6175;
+  } */
+
   #navbar.navbar-shrink {
     padding-top: 10px;
     padding-bottom: 10px;
     background: #ffffff;
   }
 }
+
 @media only screen and (max-width: 414px) {
-  .about-picture {
-    width: 334px;
-    height: 400px;
+  #header #header-container {
+    padding: 50px;
+    background: url('https://scontent.fatl1-2.fna.fbcdn.net/v/t1.0-9/68825287_10156737525079624_6109685953171816448_n.jpg?_nc_cat=106&_nc_oc=AQmpih3vN-HpBUYzQxAloksMHzo5FD7qj-dOARxM5MxWBtz5XFZlYPM5HAeLAnFlzPE&_nc_ht=scontent.fatl1-2.fna&oh=ebf06541ade10af267c2fb2e1236fe41&oe=5DD845A2');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 480px;
   }
 
-  .blog-picture {
-    width: 330px;
-  }
-
-  .port {
-    margin-top: -60px;
-  }
-  .ports a {
-    margin-top: -90px;
-  }
-
-  .port-margin {
+  .orders {
     margin-top: 20px;
+  }
+
+  .ordering {
+    width: 240px;
+    height: 274px;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+
+  .order-picture {
+    width: 239px;
+    height: 200px;
+  }
+
+  .center {
+    width: 270px;
+    height: 150px;
+    margin-left: 24px;
+  }
+
+  .baked {
+    font-size: 53px;
+    margin-top: -10px;
+  }
+
+  .about-her {
+    width: 290px;
+    height: 250px;
+  }
+
+  .about-hers {
+    width: 340px;
+    height: 300px;
+  }
+
+  .main-btn {
+    font-size: 13px;
   }
 
   #header #footer-container p {
     letter-spacing: 1px;
     line-height: 1.2;
   }
+
   #get-involved .container .row .col-md-4 a {
     margin-bottom: 30px;
   }
+
   #event .container .row .col-md-4 .card {
     margin-bottom: 35px;
   }
+
   #event {
     padding-bottom: 0;
   }
+
   #blog {
     padding-bottom: 0;
   }
+
   #mission {
     opacity: 1;
   }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .about-hers {
+    width: 289px;
+    height: 190px;
+  }
+
+  .about-her {
+    width: 320px;
+    height: 320px;
+  }
+
+  .about-herz {
+    width: 289px;
+    height: 220px;
+  }
+
+  .order-picture {
+    width: 209px;
+    height: 200px;
+  }
+
 }
